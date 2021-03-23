@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+        background-color: white;
+        }
+        h1{
+            background-color: grey;
+            margin: 5px;   
+        }
+        p{
+            background-color: whitesmoke;
+            padding:2px;
+            font-size: 20px;
+        }
+        h2{
+            background-color: yellow;
+        }
+        @media only screen and (min-width: 1023px) {
+        body {
+            background-color: pink;
+
+        }
+        .tablet {
+            display: none;
+        }
+        .phone{
+            display: none;
+        }
+        }
+        @media only screen and (min-width: 481px) {
+        body {
+            background-color: lightblue;
+        }
+        .desktop {
+            display: none;
+        }
+        .phone{
+            display: none;
+        }
+        }
+
+        @media only screen and (max-width: 480px) {
+        body {
+            background-color: red;
+
+        }
+        .desktop {
+            display: none;
+        }
+        .tablet{
+            display: none;
+        }
+        }
+        </style>
+    </head>
+    <body>
+        <h1>@queries</h1>
+        <p>CSS uses the @media rule to detect information about  the device being used to access the website. For example, it can be  used to detect the size of the device size, but keepin mind that it is capable of much</p>
+        <h2 class="desktop">Desktop: width greater than or equal to 1024px</h2>
+        <h2 class="tablet">Tablet: width between 481px to 1023px</h2>
+        <h2 class="phone">Phone: width less than or equal to 480px</h2>
+    </body>
+    </html>
